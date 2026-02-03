@@ -42,6 +42,7 @@ Run the preprocessing script to apply the KNN-based hole generation pipeline. Th
 python generate_synthetic_holes.py --dataset_dir data/shapenet --k_points 1024 --removal_range 512 4096
 ```
 This will create a new directory `data/shapenet_with_holes/` containing the corrupted input data alongside the original ground truth.
+
 ![Hole Filling Result](result_demo/hole%20(1).png)
 
 ## 🚀 How to Run
