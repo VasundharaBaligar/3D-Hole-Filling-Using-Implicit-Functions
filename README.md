@@ -3,8 +3,8 @@
 **Abstract**
 3D point cloud generation often suffers from occlusion and scanning limitations, resulting in visual inconsistencies and geometric holes. This project introduces a deep learning framework to address 3D hole filling using implicit functions, specifically leveraging Occupancy Networks. By learning a continuous representation of the point cloud, our network extracts both surface representations and underlying geometry to seamlessly fill voids. This method ensures high visual consistency with surrounding geometry and has direct applications in digital heritage preservation, AR/VR, and robotics.
 
-! result_demo/image.png
-! result_demo/hole (1).png
+![Pipeline Diagram](result_demo/image.png)
+![Hole Filling Result](result_demo/hole%20(1).png)
 
 ## 🚀 Key Features
 * **Continuous Representation:** Utilizes Implicit Autoencoders and Occupancy Networks to model 3D space continuously, avoiding the memory constraints of voxel grids.
