@@ -4,7 +4,6 @@
 3D point cloud generation often suffers from occlusion and scanning limitations, resulting in visual inconsistencies and geometric holes. This project introduces a deep learning framework to address 3D hole filling using implicit functions, specifically leveraging Occupancy Networks. By learning a continuous representation of the point cloud, our network extracts both surface representations and underlying geometry to seamlessly fill voids. This method ensures high visual consistency with surrounding geometry and has direct applications in digital heritage preservation, AR/VR, and robotics.
 
 ![Pipeline Diagram](result_demo/image.png)
-![Hole Filling Result](result_demo/hole%20(1).png)
 
 ## 🚀 Key Features
 * **Continuous Representation:** Utilizes Implicit Autoencoders and Occupancy Networks to model 3D space continuously, avoiding the memory constraints of voxel grids.
@@ -43,6 +42,7 @@ Run the preprocessing script to apply the KNN-based hole generation pipeline. Th
 python generate_synthetic_holes.py --dataset_dir data/shapenet --k_points 1024 --removal_range 512 4096
 ```
 This will create a new directory `data/shapenet_with_holes/` containing the corrupted input data alongside the original ground truth.
+![Hole Filling Result](result_demo/hole%20(1).png)
 
 ## 🚀 How to Run
 
